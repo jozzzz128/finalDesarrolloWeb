@@ -90,7 +90,7 @@
     "nombre": "Club Sandwich",
     "descripcion": "Porción de tres panes normal o integral, aderezo de la casa, jamón, queso amarillo, jitomate y papa a la francesa.",
     "precioGeneral": 33,
-    "clase":null
+    "clase": []
     },
     {
     "nombre": "Chilaquiles",
@@ -283,7 +283,7 @@
     "nombre": "Sandwiches",
     "descripcion": "",
     "precioGeneral": 20,
-    "clase": null
+    "clase": []
   },
     {
     "nombre": "Quesadillas",
@@ -306,7 +306,7 @@
     "nombre": "Burritos",
     "descripcion": "Tortillas de harina gigante, acompañado de queso Oaxaca, frijol, carne y ensalada.",
     "precioGeneral": 33,
-    "clase":null
+    "clase": []
   },
     {
     "nombre": "Hamburguesas",

@@ -76,6 +76,29 @@ header .logo{
   background: #2a2730;
 }
 
+#body-container .slide aside span{
+  display: block;
+  color: #fff;
+  padding: 14px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#body-container .slide aside span:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#body-container .slide aside .bottom-options{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
 #body-container .slide .resize-container{
   top: 0px;
   right: 0px;
@@ -93,7 +116,6 @@ header .logo{
   background: #fff;
   width: 100%;
   /*max-width: 1300px;*/
-  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -102,8 +124,7 @@ header .logo{
   position: relative;
   height: 100%;
   width: 50vw;
-  padding: 20px;
-  padding-bottom: 0px;
+  padding: 15px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -123,17 +144,60 @@ header .logo{
   width: 100%;
   max-width: 380px;
   animation: showOpacity 0.3s linear 1;
+  position: relative;
   overflow: hidden;
-  transition: 0.4s;
-  margin-bottom: 20px;
+  transition: 0.2s;
+  margin: 5px;
+  padding-top: 32px;
+  box-sizing: border-box;
   border: 1px solid #000;
   box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.5);
+ }
+
+ #body-container .slide .element .pedido .main-options-content{
+   background: #fff;
+   list-style: none;
+   text-align: left;
+   position: absolute;
+   width: 100%;
+   top: 0px;
+   transition: 0.2s;
+   transition-delay: 0.2s;
+   top: -100%;
+   z-index: 1000;
+   border-top: 5px solid #2a2730;
+ }
+
+ #body-container .slide .element .pedido .main-options-content li{
+   display: block;
+   padding: 12px;
+   box-sizing: border-box;
+   cursor: pointer;
+   font-family: 'Lato';
+   opacity: 0.9;
+ }
+
+ #body-container .slide .element .pedido .main-options-content li:last-child{
+    color: #C92C19;
+ }
+
+ #body-container .slide .element .pedido .main-options-content li:hover{
+   opacity: 1;
+ }
+
+ #body-container .slide .element .pedido .main-options-content li span{
+   margin-right: 10px;
  }
 
   #body-container .slide .element .pedido .main-options{
     background: #2a2730;
     list-style: none;
     text-align: right;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    transition: 0.2s;
+    transition-delay: 0.2s;
   }
 
   #body-container .slide .element .pedido .main-options li{
@@ -146,6 +210,18 @@ header .logo{
 
   #body-container .slide .element .pedido .main-options li:hover{
     background: rgba(255, 255, 255, 0.1);
+  }
+
+  #body-container .slide .element .pedido .main-options p{
+    color: #fff;
+    font-family: 'Lato';
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  #body-container .slide .element .pedido .main-options p span:nth-child(2){
+    margin-left: 10px;
   }
 
   #body-container .slide .element .pedido .top-container{
@@ -181,7 +257,9 @@ header .logo{
     text-align: left;
     font-size: 18px;
     padding-left: 59px;
+    padding-bottom: 0px;
     box-sizing: border-box;
+    line-height: 1;
   }
 
   #body-container .slide .element .pedido .top-container .thumb{
@@ -242,12 +320,12 @@ header .logo{
   }
 
   #body-container .slide .element .pedido .user-info .thumb{
-    width: 86px;
+    width: 80px;
     height: 80px;
     border: 5px solid #2a2730;
     box-sizing: border-box;
     border-radius: 360px;
-    background-size: 110% !important;
+    background-size: 120% !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
   }
@@ -258,8 +336,9 @@ header .logo{
     font-size: 22px;
     position: relative;
     height: 80px;
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: inline-block;
+    float: right;
+    text-align: right;
     color: #fff;
     font-family: 'Raleway';
   }
@@ -288,9 +367,11 @@ header .logo{
   max-width: 250px;
   position: absolute;
   width: 100%;
+  overflow: hidden;
   /*height: 15.5vw;*/
   border: 1px solid #000;
   background: #f0f0f0;
+  padding-top: 32px;
   box-sizing: border-box;
   box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.5);
   transition: 0.4s;
@@ -368,8 +449,45 @@ header .logo{
   width: 100%;
 }
 
+#body-container .pedidos-container .recipe-block .top-options .main-options-content{
+  width: 100%;
+  font-family: 'Lato';
+  position: absolute;
+  top: -100%;
+  background: #333;
+  transition: 0.2s;
+  z-index: 1000;
+  transition-delay: 0.2s;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .main-options-content li{
+  color: #fff;
+  opacity: 0.9;
+  display: block;
+  padding: 7px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .main-options-content li:last-child{
+  background: #C92C19;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .main-options-content li:hover{
+  opacity: 1;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .main-options-content li span{
+  margin-right: 10px;
+}
+
 #body-container .pedidos-container .recipe-block .top-options .options{
+  width: 100%;
   text-align: right;
+  position: absolute;
+  top: 0px;
+  transition: 0.2s;
+  transition-delay: 0.2s;
 }
 
 #body-container .pedidos-container .recipe-block .top-options .options span{
@@ -391,12 +509,30 @@ header .logo{
   font-family: 'Righteous';
   background: #2b2831;
   color: #fff;
+  position: relative;
 }
 
 #body-container .pedidos-container .recipe-block .top-options .title p span{
   display: block;
   font-size: 12px;
   font-family: 'Raleway';
+}
+
+#body-container .pedidos-container .recipe-block .top-options .title p button{
+  background: #e98a0c;
+  color: #fff;
+  padding: 3px 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: 'Righteous';
+  border: 0px;
+  font-size: 16px;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  transition: 0.1s;
+  cursor: pointer;
+  animation: showOpacity 0.1s linear 1;
 }
 
  #element1{
@@ -410,7 +546,7 @@ header .logo{
 
  footer{
    width: 100%;
-   position: absolute;
+   position: fixed;
    bottom: 0px;
    background: #2a2730;
  }

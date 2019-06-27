@@ -1,0 +1,26 @@
+[
+  {
+    "id":1,
+    "usuario":"jozzzz128",
+    "contrasena": "frpn412128",
+    "nombre":"José",
+    "apellidos":"Carrillo Morales",
+    "expediente":278789,
+    "globalExceptions":"Sin picante, y sin pepino, y sin comida",
+    "foto": "img/perfil.png",
+    "troyano":true,
+    "saldo":45.50
+  },
+  {
+    "id":2,
+    "usuario":"elMeade",
+    "contrasena": "elMeade",
+    "nombre":"Antonio",
+    "apellidos":"Meade Kuribreña",
+    "expediente":null,
+    "globalExceptions":"",
+    "foto": "img/perfil2.png",
+    "troyano":false,
+    "saldo":122.50
+  }
+]
