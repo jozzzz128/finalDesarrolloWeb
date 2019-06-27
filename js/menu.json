@@ -7,7 +7,7 @@
         {
           "nombre":"Huevos Estrellados",
           "descripcion": null,
-          "precioIndividual": null
+          "precioIndividual": 38
         },
         {
           "nombre": "Huevos Revueltos",
@@ -44,7 +44,7 @@
         {
           "nombre": "El cereal del tigre",
           "descripcion": "Dulce como tu corazon",
-          "precioIndividual": null
+          "precioIndividual": 15
         },
         {
           "nombre": "El cereal del elefante negro",
@@ -174,9 +174,9 @@
     "precioGeneral": 18,
     "clase":[
       {
-        "nombre": "Jugo Naranja",
+        "nombre": "Jugo de Naranja",
         "descripcion": null,
-        "precioIndividual": null
+        "precioIndividual": 18
       },
       {
         "nombre": "Jugo Zanahoria",
@@ -201,22 +201,22 @@
     "precioGeneral": 20,
     "clase":[
       {
-        "nombre": "Coctel Papaya",
+        "nombre": "Coctel de Papaya",
+        "descripcion": null,
+        "precioIndividual": 20
+      },
+      {
+        "nombre": "Coctel de Fresa",
         "descripcion": null,
         "precioIndividual": null
       },
       {
-        "nombre": "Coctel Fresa",
+        "nombre": "Coctel de Melon",
         "descripcion": null,
         "precioIndividual": null
       },
       {
-        "nombre": "Coctel Melon",
-        "descripcion": null,
-        "precioIndividual": null
-      },
-      {
-        "nombre": "Coctel Manzana",
+        "nombre": "Coctel de Manzana",
         "descripcion": null,
         "precioIndividual": null
       },

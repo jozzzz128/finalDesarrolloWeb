@@ -148,6 +148,7 @@ header .logo{
   overflow: hidden;
   transition: 0.2s;
   margin: 5px;
+  transition: 0.2s;
   padding-top: 32px;
   box-sizing: border-box;
   border: 1px solid #000;
@@ -162,7 +163,7 @@ header .logo{
    width: 100%;
    top: 0px;
    transition: 0.2s;
-   transition-delay: 0.2s;
+   transition-delay: 0.4s;
    top: -100%;
    z-index: 1000;
    border-top: 5px solid #2a2730;
@@ -197,7 +198,7 @@ header .logo{
     width: 100%;
     top: 0px;
     transition: 0.2s;
-    transition-delay: 0.2s;
+    transition-delay: 0.4s;
   }
 
   #body-container .slide .element .pedido .main-options li{

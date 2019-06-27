@@ -1,10 +1,25 @@
 'use strict'
 
 //random number
-function randomIntFromInterval(min,max) // min and max included
-  {
-      return Math.floor(Math.random()*(max-min+1)+min);
-  }
+function randomIntFromInterval(min,max){
+  return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+function rejectOrder(param1){
+  var note = param1.parentElement.parentElement;
+  note.style.transform = "scale(0)";
+  setTimeout(()=>{
+    note.remove();
+  },200);
+}
+
+function rejectOrderPrepare(param1){
+  var note = param1.parentElement.parentElement.parentElement;
+  note.style.transform = "scale(0)";
+  setTimeout(()=>{
+    note.remove();
+  },200);
+}
 
 //PETICION AJAX
 function ajaxStart(url){
@@ -33,7 +48,7 @@ function mainOptionsPedidoBlur(param1){
 }
 
 //Obtener informacion de un usuario
-function getUserFromID(id, callbackDELcallback){
+function getUserFromID(id){
   var userJsons = ajaxStart("js/users.json");
     var bandera = false;
     var temp = 0;
@@ -89,7 +104,6 @@ function getTime() {
 //Generar pedido
 function generateOrder(json){
   var userOwner = getUserFromID(json.idUsuario);
-
   var element1 = document.querySelector("#element1");
   var pedido = document.createElement("div");
       pedido.classList.add("pedido");
@@ -119,6 +133,7 @@ function generateOrder(json){
               mainOptionsContentLi1.innerHTML = '<span class="icon-info"></span>Mas información del Pedido';
           mainOptionsContent.append(mainOptionsContentLi1);
           var mainOptionsContentLi2 = document.createElement("li");
+              mainOptionsContentLi2.addEventListener("click",function(e){rejectOrder(this);});
               mainOptionsContentLi2.innerHTML = '<span class="icon-bin2"></span>Rechazar Pedido';
           mainOptionsContent.append(mainOptionsContentLi2);
       pedido.append(mainOptionsContent);
@@ -217,6 +232,7 @@ function generateFullOrder(orderJSON, user){
               mainOptionsContentLi1.innerHTML = '<span class="icon-info"></span>Mas información del Pedido';
           mainOptionsContent.append(mainOptionsContentLi1);
           var mainOptionsContentLi2 = document.createElement("li");
+              mainOptionsContentLi2.addEventListener("click", function(e){rejectOrder(this);} );
               mainOptionsContentLi2.innerHTML = '<span class="icon-bin2"></span>Cancelar Pedido';
           mainOptionsContent.append(mainOptionsContentLi2);
       pedido.append(mainOptionsContent);
@@ -317,7 +333,7 @@ function generateFullOrder(orderJSON, user){
               options.append(dots);
           var optionsCont = document.createElement("ul");
               optionsCont.classList.add("main-options-content");
-              optionsCont.innerHTML = '<li><span class="icon-bin2"></span>Cancelar Pedido</li>';
+              optionsCont.innerHTML = '<li onclick="rejectOrderPrepare(this);"><span class="icon-bin2"></span>Cancelar Pedido</li>';
           topOptions.append(options);
           topOptions.append(optionsCont);
           //Title
@@ -459,39 +475,40 @@ window.addEventListener('load',()=>{
           exceptions: "Iguales que los rojos"
         },
         {
-          nombre: "Chilaquiles Rojos",
-          exceptions: "Con 3 huevos, sin mucho picante, y sin crema"
+          nombre: "El cereal del tigre",
+          exceptions: "Sin leche"
         },
         {
-          nombre: "Chilaquiles Verdes",
-          exceptions: "Iguales que los rojos"
+          nombre: "Coctel de Papaya",
+          exceptions: "Con extra papaya"
         }
       ]
     }
 
     var ordenPrueba2 = {
       idUsuario: 2,
-      idPedido: 1,
+      idPedido: 3,
       horaCreacion: getTime(),
       pagado: false,
-      paraLlevar: true,
-      programado: "14:20",
+      paraLlevar: false,
+      programado: "now",
       pedido: [
         {
-          nombre: "Chilaquiles Rojos",
-          exceptions: "Con 3 huevos, sin mucho picante, y sin crema"
+          nombre: "Huevos Estrellados",
+          exceptions: "Con 3 huevos"
         },
         {
-          nombre: "Chilaquiles Verdes",
-          exceptions: "Iguales que los rojos"
+          nombre: "Jugo de Naranja",
+          exceptions: ""
         }
       ]
     }
 
     setInterval(()=>{
       var ordenPru = [ordenPrueba1,ordenPrueba2];
-      generateOrder(ordenPru[randomIntFromInterval(-1,2)]);
-    },randomIntFromInterval(1,60)+"000");
+      console.log(randomIntFromInterval(-0,1));
+      generateOrder(ordenPru[randomIntFromInterval(-0,1)]);
+    },randomIntFromInterval(0,10)+"000");
 
     //ajaxStart("js/menu.json");
 });
