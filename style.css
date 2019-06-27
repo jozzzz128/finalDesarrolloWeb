@@ -1,0 +1,458 @@
+*{
+  margin:0;
+  padding:0;
+  font-weight: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+  -webkit-touch-callout: none;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body{
+  overflow: hidden;
+}
+
+body .limiter{
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #2a2730;
+  border-bottom: 6px solid #e98a0c;
+}
+
+header .logo{
+  width: 160px;
+  height: 70px;
+  background: url(img/logo.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#body-container .slide{
+  position: absolute;
+  left: 0px;
+  top: 86px;
+  display:inline-block;
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 125px);
+  transition: 0.3s;
+}
+
+#body-container .slide aside{
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: #2a2730;
+}
+
+#body-container .slide .resize-container{
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  display: inline-flex;
+  width: calc(100% - 60px);
+  height: 100%;
+}
+
+#body-container #slide-2{
+  left: 100vw;
+}
+
+#body-container .slide .pedidos-container{
+  background: #fff;
+  width: 100%;
+  /*max-width: 1300px;*/
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#body-container .slide .element{
+  position: relative;
+  height: 100%;
+  width: 50vw;
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: auto;
+  overflow-x: hidden;
+ }
+
+ #body-container .slide #element-2{
+  text-align: right;
+ }
+
+ #body-container .slide .element .pedido{
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 380px;
+  animation: showOpacity 0.3s linear 1;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.5);
+ }
+
+  #body-container .slide .element .pedido .main-options{
+    background: #2a2730;
+    list-style: none;
+    text-align: right;
+  }
+
+  #body-container .slide .element .pedido .main-options li{
+    display: inline-block;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #body-container .slide .element .pedido .main-options li:hover{
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  #body-container .slide .element .pedido .top-container{
+    padding: 10px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    float: left;
+  }
+
+ #body-container .slide .element .pedido .top-container h2{
+  font-size: 22px;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Righteous';
+  vertical-align: top;
+ }
+
+  #body-container .slide .element .pedido .top-container h2 span{
+    display: block;
+    font-size: 12px;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+  }
+
+  #body-container .slide .element .pedido .content{
+    width: 100%;
+    font-family: 'Kalam';
+    color: #fff;
+    text-align: justify;
+    padding: 10px;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 59px;
+    box-sizing: border-box;
+  }
+
+  #body-container .slide .element .pedido .top-container .thumb{
+    padding: 12px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: #2a2730;
+    color: #fff;
+    margin-right: 7px;
+    border-radius: 360px;
+    display: inline-block;
+  }
+
+  #body-container .slide .element .pedido .top-container .thumb span{
+    font-size: 18px;
+  }
+
+ #body-container .slide .element .pedido.fac-info{
+    background: #2A6FB8;
+ }
+
+ #body-container .slide .element .pedido.default{
+    background: #f0f0f0;
+ }
+
+ #body-container .slide .element .pedido.default .content{
+   color: #333;
+ }
+
+  #body-container .slide .element .pedido.default .top-container h2{
+    color: #333;
+  }
+
+  #body-container .slide .element .pedido .confirm{
+    background: #2a2730;
+    border: 0px;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    float: right;
+    margin: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Righteous';
+    cursor: pointer;
+  }
+
+  #body-container .slide .element .pedido .confirm span{
+    margin-right: 5px;
+  }
+
+  #body-container .slide .element .pedido .user-info{
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #body-container .slide .element .pedido .user-info .thumb{
+    width: 86px;
+    height: 80px;
+    border: 5px solid #2a2730;
+    box-sizing: border-box;
+    border-radius: 360px;
+    background-size: 110% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #body-container .slide .element .pedido .user-info p{
+    padding: 10px 0px;
+    box-sizing: border-box;
+    font-size: 22px;
+    position: relative;
+    height: 80px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-family: 'Raleway';
+  }
+
+  #body-container .slide .element .pedido .user-info p span{
+    display: block;
+    font-size: 17px;
+    font-family: 'Righteous';
+  }
+
+#resizer{
+  width:50px;
+  height:50px;
+  background:#fff;
+  border: 6px solid #ccc;
+  box-sizing: border-box;
+  left:calc(50% - 24px);
+  top:calc(50% - 15px);
+  position:absolute;
+  cursor:se-resize;
+  border-radius: 360px;
+  z-index: 1000;
+}
+
+#body-container .pedidos-container .recipe-block{
+  max-width: 250px;
+  position: absolute;
+  width: 100%;
+  /*height: 15.5vw;*/
+  border: 1px solid #000;
+  background: #f0f0f0;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 26px -2px rgba(0,0,0,0.5);
+  transition: 0.4s;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul{
+  padding: 10px 5px;
+  box-sizing: border-box;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li{
+  font-family: 'Kalam';
+  font-size: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li input{
+  display: none;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li label{
+  padding:0px 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #2b2831;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li label p{
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li label .check{
+  width: 20px;
+  height: 20px;
+  border-radius: 360px;
+  position: absolute;
+  left: 7px;
+  top: 0px;
+  border: 2px solid #2b2831;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li label .check .icon-checkmark{
+  position: absolute;
+  display: block;
+  font-size: 28px;
+  top: -8px;
+  left: -2px;
+  animation: aparecer 0.3s linear 1;
+  display: none;
+  color: #2b2831;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li input:checked + label .check{
+  border: 0px;
+}
+
+#body-container .pedidos-container .recipe-block .order-content ul li input:checked + label .check .icon-checkmark{
+  display: block;
+}
+
+#body-container .pedidos-container .recipe-block .top-options{
+  display: block;
+  width: 100%;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .options{
+  text-align: right;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .options span{
+  display: inline-block;
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .options span:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#body-container .pedidos-container .recipe-block .top-options .title{
+  padding: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-family: 'Righteous';
+  background: #2b2831;
+  color: #fff;
+}
+
+#body-container .pedidos-container .recipe-block .top-options .title p span{
+  display: block;
+  font-size: 12px;
+  font-family: 'Raleway';
+}
+
+ #element1{
+   border-right: 2.5px solid #ccc;
+ }
+
+ #element2{
+   border-left: 2.5px solid #ccc;
+   direction: rtl;
+ }
+
+ footer{
+   width: 100%;
+   position: absolute;
+   bottom: 0px;
+   background: #2a2730;
+ }
+
+  footer ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+  }
+
+  footer ul li{
+    position: relative;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 18px;
+    /*color: #fff;*/
+    color: #d2c398;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  footer ul li .triangulo{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: calc(50% - 15px);
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #f0ad4e;
+  }
+
+  footer ul li.selected{
+    background: #e98a0c;
+    color: #fff;
+    cursor: default;
+  }
+
+  footer ul li.selected .triangulo{
+    display: block;
+  }

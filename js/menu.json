@@ -1,0 +1,528 @@
+[
+    {
+      "nombre":"Huevos al gusto",
+      "descripcion":"Desayuno completo incluye tortillas, café o té.",
+      "precioGeneral": 38,
+      "clase": [
+        {
+          "nombre":"Huevos Estrellados",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Huevos Revueltos",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Huevos con Jamón",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Huevos con Tocino",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Huevos con Chorizo",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Huevos con Salchicha",
+          "descripcion": null,
+          "precioIndividual": null
+        }
+      ]
+    },
+    {
+      "nombre": "Cereal",
+      "descripcion": null,
+      "precioGeneral": 15,
+      "clase": [
+        {
+          "nombre": "El cereal del tigre",
+          "descripcion": "Dulce como tu corazon",
+          "precioIndividual": null
+        },
+        {
+          "nombre": "El cereal del elefante negro",
+          "descripcion": "Muy chocolatoso",
+          "precioIndividual": null
+        },
+        {
+          "nombre": "El cereal del tucan",
+          "descripcion": "Donas tutifruti",
+          "precioIndividual": null
+        },
+        {
+          "nombre": "El cereal del Gallo",
+          "descripcion": "La version pirata del cereal del tigre(Sin azucar)",
+          "precioIndividual": null
+        },
+        {
+          "nombre": "El cereal del conejo negro",
+          "descripcion": "Chocolate en forma redondito",
+          "precioIndividual": null
+        }
+      ]
+    },
+    {
+      "nombre": "Fruta con yogurth",
+      "descripcion": null,
+      "precioGeneral": 25,
+      "clase": [
+        {
+          "nombre": "Yogurth natural",
+          "descripcion": null,
+          "precioIndividual": null
+
+        },
+        {
+          "nombre": "Yogurth de Fruta",
+          "descripcion": null,
+          "precioIndividual": null
+        }
+      ]
+  },
+    {
+    "nombre": "Club Sandwich",
+    "descripcion": "Porción de tres panes normal o integral, aderezo de la casa, jamón, queso amarillo, jitomate y papa a la francesa.",
+    "precioGeneral": 33,
+    "clase":null
+    },
+    {
+    "nombre": "Chilaquiles",
+    "descripcion": null,
+    "precioGeneral": null,
+    "clase":[
+      {
+        "nombre": "Chilaquiles Rojos",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Chilaquiles Verdes",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Chilaquiles Verdes con huevos al gusto",
+        "descripcion": null,
+        "precioIndividual": 65
+      },
+      {
+        "nombre": "Chilaquiles rojos con huevos al gusto",
+        "descripcion": null,
+        "precioIndividual": 65
+      },
+      {
+        "nombre": "Chilaquiles suizos con huevos al gusto",
+        "descripcion": null,
+        "precioIndividual": 65
+      }
+    ]
+  },
+    {
+    "nombre": "Enchiladas",
+    "descripcion": null,
+    "precioGeneral": null,
+    "clase":[
+      {
+        "nombre": "Enchiladas Rojas de pollo",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Enchiladas Rojas de queso",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Enchiladas Verdes de pollo",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Enchiladas Verdes de queso",
+        "descripcion": null,
+        "precioIndividual": 38
+      }
+    ]
+  },
+    {
+    "nombre": "Molletes",
+    "descripcion": "Bolillo completo partido por la mitad, acompañado con frijoles, queso manchego y lechuga",
+    "precioGeneral": null,
+    "clase":[
+      {
+        "nombre": "Mollete",
+        "descripcion": null,
+        "precioIndividual": 25
+      },
+      {
+        "nombre": "Mollete especial",
+        "descripcion": "Acompañado con cualquier tipo de carne.",
+        "precioIndividual": 35
+      }
+    ]
+  },
+    {
+    "nombre": "Jugos",
+    "descripcion": null,
+    "precioGeneral": 18,
+    "clase":[
+      {
+        "nombre": "Jugo Naranja",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Jugo Zanahoria",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Jugo Toronja",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Jugo Combinado",
+        "descripcion": null,
+        "precioIndividual": null
+      }
+    ]
+  },
+  {
+    "nombre": "Cocteles de Frutas",
+    "descripcion": null,
+    "precioGeneral": 20,
+    "clase":[
+      {
+        "nombre": "Coctel Papaya",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Coctel Fresa",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Coctel Melon",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Coctel Manzana",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Coctel Platano",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+          "nombre": "Coctel Guayaba",
+          "descripcion": null,
+          "precioIndividual": null
+        },
+        {
+          "nombre": "Coctel Sandia",
+          "descripcion": null,
+          "precioIndividual": null
+        }
+    ]
+  },
+  {
+    "nombre": "Ensalada",
+    "descripcion": "Acompañadas con una cama de lechoga, jitomate, pepino, totopos y aderezo a vinagreta al gusto.",
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Ensalada de fajita de pollo",
+        "descripcion": null,
+        "precioIndividual": 40
+      },
+      {
+        "nombre": "Ensalada de Atun",
+        "descripcion": null,
+        "precioIndividual": 40
+      },
+      {
+        "nombre": "Ensalada de carnes frías con queso panela",
+        "descripcion": null,
+        "precioIndividual": 40
+      },
+      {
+        "nombre": "Ensalada de Cubitos de queso panela",
+        "descripcion": null,
+        "precioIndividual": 40
+      },
+      {
+        "nombre": "Ensalada de Fajitas de pollo a la BBQ",
+        "descripcion": null,
+        "precioIndividual": 50
+      },
+      {
+        "nombre": "Ensalada de Fajitas de bistec asada con cubitos de panela.",
+        "descripcion": null,
+        "precioIndividual": 50
+      },
+      {
+        "nombre": "Ensalada de Fajitas de pollo asado",
+        "descripcion": null,
+        "precioIndividual": 50
+      }
+    ]
+  },
+  {
+    "nombre": "Sandwiches",
+    "descripcion": "",
+    "precioGeneral": 20,
+    "clase": null
+  },
+    {
+    "nombre": "Quesadillas",
+    "descripcion": "",
+    "precioGeneral": null,
+    "clase":[
+      {
+        "nombre": "Quesadilla",
+        "descripcion": "",
+        "precioIndividual": 10
+      },
+      {
+        "nombre": "Quesadilla epecial",
+        "descripcion": "Tortilla de harina o maíz, con cualquier tipo de carne o guiso.",
+        "precioIndividual": 18
+      }
+    ]
+  },
+    {
+    "nombre": "Burritos",
+    "descripcion": "Tortillas de harina gigante, acompañado de queso Oaxaca, frijol, carne y ensalada.",
+    "precioGeneral": 33,
+    "clase":null
+  },
+    {
+    "nombre": "Hamburguesas",
+    "descripcion": "La hamburguesa va acompañada de aderezo de la casa, jamón, queso amarillo, lechuga,jitomate y cátsup.",
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Hamburguesa sencilla CH",
+        "descripcion": "",
+        "precioIndividual": 28
+      },
+      {
+          "nombre": "Hamburguesa Hawaiana CH",
+          "descripcion": "",
+          "precioIndividual": 33
+        },
+        {
+          "nombre": "Hamburguesa BBQ CH",
+          "descripcion": "",
+          "precioIndividual": 33
+        },
+        {
+          "nombre": "Hamburguesa sencilla GRDE",
+          "descripcion": "",
+          "precioIndividual": 33
+        },
+        {
+          "nombre": "Hamburguesa Hawaiana GRDE",
+          "descripcion": "",
+          "precioIndividual": 38
+        },
+        {
+          "nombre": "Hamburguesa BBQ GRDE",
+          "descripcion": "",
+          "precioIndividual": 38
+        },
+        {
+          "nombre": "Hamburguesa Vip",
+          "descripcion": "Arrachera o sirlón, incluye papas a la francesa",
+          "precioIndividual": 55
+        }
+    ]
+  },
+    {
+    "nombre": "Pizzas personales",
+    "descripcion": null,
+    "precioGeneral": 25,
+    "clase": [
+      {
+        "nombre": "Pizza Peperoni",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Pizza Salchicha",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Pizza Chorizo",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Pizza Jamón",
+        "descripcion": null,
+        "precioIndividual": null
+      },
+      {
+        "nombre": "Pizza Hawaiana",
+        "descripcion": null,
+        "precioIndividual": null
+      }
+    ]
+  },
+    {
+    "nombre": "Baguettes",
+    "descripcion": "Los baguettes son de diferentes sabores como parmesano, hierbas finas, orégano, perejil, paprica",
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Baguette de Jamón ahumado",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Baguette de Pechuga asada",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Baguette de Pechuga empanizada",
+        "descripcion": null,
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Baguette de Bistec asado, guacamole y queso manchego",
+        "descripcion": null,
+        "precioIndividual": 45
+      },
+      {
+        "nombre": "Baguette de Fajitas de pollo a la BBQ",
+        "descripcion": null,
+        "precioIndividual": 45
+      },
+      {
+        "nombre": "Baguette de Jamón, salchicha y extra manchego",
+        "descripcion": null,
+        "precioIndividual": 45
+      }
+    ]
+  },
+    {
+    "nombre": "Comidas Corridas",
+    "descripcion": null,
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Comida corrida del día",
+        "descripcion": null,
+        "precioIndividual": 45
+      },
+      {
+        "nombre": "Comida corrida de Carne asada",
+        "descripcion": null,
+        "precioIndividual": 65
+      },
+      {
+        "nombre": "Comida corrida de Filete empanizado",
+        "descripcion": null,
+        "precioIndividual": 65
+      },
+      {
+        "nombre": "Comida corrida de Pechuga rellena de jamón con queso manchego",
+        "descripcion": null,
+        "precioIndividual": 65
+      },
+      {
+        "nombre": "Comida corrida de Costilla a la BBQ con pure de papa cremoso",
+        "descripcion": null,
+        "precioIndividual": 65
+      }
+    ]
+  },
+    {
+    "nombre": "Sincronizadas",
+    "descripcion": null,
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Sincronizada",
+        "descripcion":"Tortilla de harina normal, aderezo de la casa, jamón, queso amarillo, queso Oaxaca",
+        "precioIndividual": 20
+      },
+      {
+        "nombre": "Sincronizada especial",
+        "descripcion": "Tortilla de harina normal, aderezo de la casa, jamón, queso amarillo, queso Oaxaca y cualquier tipo de carne",
+        "precioIndividual": 30
+      }
+    ]
+  },
+    {
+    "nombre": "Tortas",
+    "descripcion": "Van acompañadas de aderezo de la casa, aguacate, lechuga, pepino y jitomate.",
+    "precioGeneral": null,
+    "clase": [
+      {
+        "nombre": "Torta de chavo ",
+        "descripcion":"Jamón, frijol y queso panela",
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta del preso ",
+        "descripcion": "Huevo con frijoles",
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta del licenciado ",
+        "descripcion": "Milanesa, pierna, chorizo y manchego",
+        "precioIndividual": 35
+      },
+      {
+        "nombre": "Torta cubana",
+        "descripcion": "De todo un poco",
+        "precioIndividual": 38
+      },
+      {
+        "nombre": "Torta de Chorizo",
+        "descripcion": null,
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta de Milanesa",
+        "descripcion": null,
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta de Salchicha",
+        "descripcion": null,
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta de Carnitas",
+        "descripcion": null,
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta de Pastor",
+        "descripcion": null,
+        "precioIndividual": 28
+      },
+      {
+        "nombre": "Torta de Combinada",
+        "descripcion": null,
+        "precioIndividual": 32
+      }
+    ]
+  }
+]
