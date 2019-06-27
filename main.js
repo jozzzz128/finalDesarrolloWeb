@@ -1,5 +1,11 @@
 'use strict'
 
+//random number
+function randomIntFromInterval(min,max) // min and max included
+  {
+      return Math.floor(Math.random()*(max-min+1)+min);
+  }
+
 //PETICION AJAX
 function ajaxStart(url){
   var jsonReturn = {};
@@ -93,7 +99,11 @@ function generateOrder(json){
       var mainOptions = document.createElement("ul");
           mainOptions.classList.add("main-options");
           var mainOptionsP = document.createElement("p");
-              mainOptionsP.innerHTML = '<span class="icon-clock2"></span> '+json.horaCreacion;
+              var horaEntrega = "";
+              var lugar = '<span class="icon-forkandknife"></span>';
+              if(json.programado != "now") horaEntrega = '<span class="icon-stopwatch"></span> '+json.programado;
+              if(json.paraLlevar) lugar = '<span class="icon-shopping-bag"></span>';
+              mainOptionsP.innerHTML = '<span class="icon-clock2"></span> '+json.horaCreacion + horaEntrega + lugar;
           mainOptions.append(mainOptionsP);
           var mainOptionsLi = document.createElement("li");
               mainOptionsLi.classList.add("icon-dots-three-horizontal");
@@ -187,7 +197,11 @@ function generateFullOrder(orderJSON, user){
       var mainOptions = document.createElement("ul");
           mainOptions.classList.add("main-options");
           var mainOptionsP = document.createElement("p");
-              mainOptionsP.innerHTML = '<span class="icon-clock2"></span> '+order.horaCreacion+' <span class="icon-clock2"></span> '+order.horaTermino;
+              var horaEncargo = "";
+              var lugar = '<span class="icon-forkandknife"></span>';
+              if(order.programado != "now") horaEncargo = '<span class="icon-stopwatch"></span> '+order.programado;
+              if(order.paraLlevar) lugar = '<span class="icon-shopping-bag"></span>';
+              mainOptionsP.innerHTML = '<span class="icon-clock2"></span> '+order.horaCreacion+' <span class="icon-clock2"></span> '+order.horaTermino+horaEncargo+lugar;
           mainOptions.append(mainOptionsP);
           var mainOptionsLi = document.createElement("li");
               mainOptionsLi.classList.add("icon-dots-three-horizontal");
@@ -291,6 +305,10 @@ function generateFullOrder(orderJSON, user){
           topOptions.classList.add("top-options");
           var options = document.createElement("div");
               options.classList.add("options");
+              var place = document.createElement("span");
+                  if(order.paraLlevar) place.classList.add("icon-shopping-bag");
+                  else place.classList.add("icon-forkandknife");
+              options.append(place);
               var dots = document.createElement("span");
                   dots.classList.add("icon-dots-three-horizontal");
                   dots.setAttribute("tabindex","0");
@@ -424,25 +442,56 @@ window.addEventListener('load',()=>{
     footerButtons[1].addEventListener("click", showSecond);
 
     //Prueba
-    var ordenPrueba = {
+    var ordenPrueba1 = {
       idUsuario: 1,
       idPedido: 1,
       horaCreacion: getTime(),
       pagado: false,
+      paraLlevar: true,
+      programado: "14:20",
       pedido: [
         {
           nombre: "Chilaquiles Rojos",
-          tipo: "Chilaquiles",
           exceptions: "Con 3 huevos, sin mucho picante, y sin crema"
         },
         {
           nombre: "Chilaquiles Verdes",
-          tipo: "Chilaquiles",
+          exceptions: "Iguales que los rojos"
+        },
+        {
+          nombre: "Chilaquiles Rojos",
+          exceptions: "Con 3 huevos, sin mucho picante, y sin crema"
+        },
+        {
+          nombre: "Chilaquiles Verdes",
           exceptions: "Iguales que los rojos"
         }
       ]
     }
-    generateOrder(ordenPrueba);
+
+    var ordenPrueba2 = {
+      idUsuario: 2,
+      idPedido: 1,
+      horaCreacion: getTime(),
+      pagado: false,
+      paraLlevar: true,
+      programado: "14:20",
+      pedido: [
+        {
+          nombre: "Chilaquiles Rojos",
+          exceptions: "Con 3 huevos, sin mucho picante, y sin crema"
+        },
+        {
+          nombre: "Chilaquiles Verdes",
+          exceptions: "Iguales que los rojos"
+        }
+      ]
+    }
+
+    setInterval(()=>{
+      var ordenPru = [ordenPrueba1,ordenPrueba2];
+      generateOrder(ordenPru[randomIntFromInterval(-1,2)]);
+    },randomIntFromInterval(1,60)+"000");
 
     //ajaxStart("js/menu.json");
 });

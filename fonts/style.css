@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?id9j7s');
-  src:  url('fonts/icomoon.eot?id9j7s#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?id9j7s') format('truetype'),
-    url('fonts/icomoon.woff?id9j7s') format('woff'),
-    url('fonts/icomoon.svg?id9j7s#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?nup6bz');
+  src:  url('fonts/icomoon.eot?nup6bz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nup6bz') format('truetype'),
+    url('fonts/icomoon.woff?nup6bz') format('woff'),
+    url('fonts/icomoon.svg?nup6bz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,11 +33,20 @@
 .icon-forkandspoon:before {
   content: "\e901";
 }
+.icon-x:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
 .icon-clock:before {
   content: "\e94e";
 }
 .icon-clock2:before {
   content: "\e94f";
+}
+.icon-stopwatch:before {
+  content: "\e952";
 }
 .icon-cogs:before {
   content: "\e995";
@@ -53,6 +62,9 @@
 }
 .icon-checkmark2:before {
   content: "\ea11";
+}
+.icon-shopping-bag:before {
+  content: "\e903";
 }
 .icon-dots-three-horizontal:before {
   content: "\e91b";
