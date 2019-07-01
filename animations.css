@@ -19,3 +19,12 @@
     transform: scale(1.1);
   }
 }
+
+@keyframes lowOpacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

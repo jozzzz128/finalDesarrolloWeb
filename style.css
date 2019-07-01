@@ -11,6 +11,17 @@
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@font-face {
+  font-family: 'DS-Digital';
+  src:
+    url('fonts/digital/DS-Digital.ttf.woff') format('woff'),
+    url('fonts/digital/DS-Digital.ttf.svg#DS-Digital') format('svg'),
+    url('fonts/digital/DS-Digital.ttf.eot'),
+    url('fonts/digital/DS-Digital.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -611,10 +622,11 @@ header .logo{
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     transition: 0.2s;
+    animation: lowOpacity 0.3s linear 1;
   }
 
   #pop-up .pop-content{
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     border-radius: 10px;
     height: 300px;
@@ -627,18 +639,36 @@ header .logo{
     animation: showOpacity 0.3s linear 1;
   }
 
+  #pop-up .pop-content .options{
+    text-align: center;
+  }
+
   #pop-up .pop-content .options button{
     background: #333;
     color: #fff;
     font-size: 20px;
     padding: 10px;
+    padding-left: 80px;
     box-sizing: border-box;
     font-family: 'Righteous';
     border-radius: 8px;
     cursor: pointer;
     border: 0px;
-    margin: 5px;
-    width: 240px;
+    margin: 20px;
+    max-width: 241px;
+    width: 100%;
+    position: relative;
+  }
+
+  #pop-up .pop-content .options button span{
+    font-size: 40px;
+    position: absolute;
+    left: 8px;
+    top: -12px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #333;
+    border-radius: 360px;
   }
 
   #pop-up .pop-content .options .icon-x{
@@ -666,6 +696,26 @@ header .logo{
     display: inline-block;
   }
 
-  #pop-up .pop-content .options input[type="checkbox"]{
+  #pop-up .pop-content .options label.digital{
+    font-family: 'DS-Digital';
+    background: #191919;
+    color: #fff;
+    font-size: 33px;
+    cursor: text;
+  }
+
+  #pop-up .pop-content .options label.digital + input{
+    width: 0px;
+    height: 0px;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #pop-up .pop-content .options label.digital span{
+    padding: 5px;
+    box-sizing: border-box;
     display: inline-block;
+    width: 27px;
+    text-align: center;
   }

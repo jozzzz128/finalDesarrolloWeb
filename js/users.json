@@ -1,6 +1,11 @@
 [
   {
     "id":1,
+    "foto": "img/user.png",
+    "default": true
+  },
+  {
+    "id":2,
     "usuario":"jozzzz128",
     "contrasena": "frpn412128",
     "nombre":"José",
@@ -12,7 +17,7 @@
     "saldo":45.50
   },
   {
-    "id":2,
+    "id":3,
     "usuario":"elMeade",
     "contrasena": "elMeade",
     "nombre":"Antonio",
