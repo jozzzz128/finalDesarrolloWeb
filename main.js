@@ -713,7 +713,7 @@ window.addEventListener('load',()=>{
     footerButtons[1].addEventListener("click", showSecond);
 
     //Prueba
-    /*var ordenPrueba1 = {
+    var ordenPrueba1 = {
       idUsuario: 2,
       idPedido: 1,
       horaCreacion: getTime(),
@@ -757,12 +757,12 @@ window.addEventListener('load',()=>{
         }
       ]
     }
-    var randomInterval = randomIntFromInterval(0,10)+"000";
+    var randomInterval = randomIntFromInterval(0,40)+"000";
     setInterval(()=>{
       var ordenPru = [ordenPrueba1,ordenPrueba2];
       console.log(randomIntFromInterval(-0,1));
       generateOrder(ordenPru[randomIntFromInterval(-0,1)]);
       randomInterval = randomIntFromInterval(0,10)+"000";
-    },randomInterval);*/
+    },randomInterval);
     //ajaxStart("js/menu.json");
 });
